@@ -1,4 +1,4 @@
-# hphydrants
+# hp_hydrants
 Top-level goal: read Excel sheet of hydrant locations to geocode
 
 Problem: addresses are not consistent; there are several types of addresses. Examples:
