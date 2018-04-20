@@ -10,16 +10,5 @@ Problem: addresses are not consistent; there are several types of addresses. Exa
 - Barn #23 South
 - Service Road #1
 
-Ideas:
-1. Use regex to grab address info
-2. Just pass address info to Google Maps API and filter results via bounding box
-3. If regex can not find address, address outside of city boundaries, or not found via maps write "not found" next to cell
-4. Output sheet with info - coordinates, "not found"
-
-# TODO
-- Read Excel sheet
-- Replace "CD" with "Chrysler Drive"
-- Plug address directly into Google Maps API
-- See if coordinates returned
-- See if coordinates in bounding box
-- If None, return "error"
+Solution:
+Easiest to change values in Excel (I'd use pandas now). Changed "CDS" and "CDN" to "Chrysler Drive <N or S>" and removed all full stops. Then passed locations directly to Google Maps API. Much easier than using regex data on my end; let Google do that!
